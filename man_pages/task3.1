@@ -1,0 +1,47 @@
+
+.TH task3 1 "December 2025" "OS Tasks" "User Commands"
+.SH NAME
+task3 \- Process manager for listing and signaling processes
+.SH SYNOPSIS
+task3
+.SH DESCRIPTION
+The Process Manager provides:
+.IP \[bu] 2
+List all processes (independent of terminal)
+.IP \[bu] 2
+List processes grouped by user
+.IP \[bu] 2
+Display PIDs of all processes
+.IP \[bu] 2
+Run or stop a specific process
+.IP \[bu] 2
+Send specific signals to a process
+.SH COMMANDS
+.TP
+.B List all processes
+Shows PID, user, command, state, and elapsed time.
+.TP
+.B List by user
+Filters processes by the specified username.
+.TP
+.B Show all PIDs
+Displays only process IDs.
+.TP
+.B Run a process
+Starts a command and reports its PID.
+.TP
+.B Stop a process
+Sends SIGSTOP to the given PID.
+.TP
+.B Send a signal
+Sends a chosen signal number (e.g., 15 SIGTERM, 9 SIGKILL) to the PID.
+.SH EXAMPLES
+.nf
+os_tasks
+.fi
+.SH SEE ALSO
+ps(1), kill(1), signal(7)
+.SH AUTHOR
+Hadi Mohamed
+.SH DATE
+December 2025

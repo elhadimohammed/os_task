@@ -1,0 +1,49 @@
+
+.TH task2 1 "December 2025" "OS Tasks" "User Commands"
+.SH NAME
+task2 \- User and group management (requires sudo/root)
+.SH SYNOPSIS
+task2
+.SH DESCRIPTION
+The User Manager provides a menu to manage system users and groups:
+.IP \[bu] 2
+Add and delete users
+.IP \[bu] 2
+Add and delete groups
+.IP \[bu] 2
+Change account information (username and password)
+.IP \[bu] 2
+Assign users to groups
+Operations call standard system tools and may require root privileges.
+.SH COMMANDS
+.TP
+.B Add user
+Creates a new user (with home directory).
+.TP
+.B Delete user
+Removes a user. Option to remove the user's home directory.
+.TP
+.B Add group
+Creates a new group.
+.TP
+.B Delete group
+Deletes an existing group.
+.TP
+.B Change username
+Renames an existing user.
+.TP
+.B Change password
+Invokes the system password utility for the user.
+.TP
+.B Assign user to group
+Adds a user to a supplementary group.
+.SH EXAMPLES
+.nf
+sudo os_tasks     # run main with elevated privileges for user manager
+.fi
+.SH SEE ALSO
+useradd(8), userdel(8), groupadd(8), groupdel(8), usermod(8), passwd(1)
+.SH AUTHOR
+Hadi Mohamed
+.SH DATE
+December 2025

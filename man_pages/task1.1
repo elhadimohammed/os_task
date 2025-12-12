@@ -1,0 +1,43 @@
+
+.TH task1 1 "December 2025" "OS Tasks" "User Commands"
+.SH NAME
+task1 \- File Manager for basic filesystem operations
+.SH SYNOPSIS
+task1
+.SH DESCRIPTION
+The File Manager provides a menu-driven interface to:
+.IP \[bu] 2
+List files and directories
+.IP \[bu] 2
+Change permissions of files/directories
+.IP \[bu] 2
+Create and delete files/directories
+.IP \[bu] 2
+Create symbolic link files
+It is part of the OS Tasks project and is invoked via the main program.
+.SH COMMANDS
+.TP
+.B List files/directories
+Prompts for a path and displays entries with type and permissions.
+.TP
+.B Change permissions
+Prompts for path and numeric mode (e.g., 755) and applies chmod.
+.TP
+.B Create file/directory
+Creates a new file (touch) or directory (mkdir).
+.TP
+.B Delete file/directory
+Deletes a file or a directory (recursively for directories with confirmation).
+.TP
+.B Create symbolic link
+Creates a symlink at the specified link name pointing to the target.
+.SH EXAMPLES
+.nf
+os_tasks        # run main menu
+.fi
+.SH SEE ALSO
+ls(1), chmod(1), ln(1), rm(1), mkdir(1)
+.SH AUTHOR
+Hadi Mohamed
+.SH DATE
+December 2025
